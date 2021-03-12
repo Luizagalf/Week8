@@ -1,0 +1,278 @@
+    .container {
+        background-color: white;
+    }
+
+    h1,
+    p,
+    img,
+    button {
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-size: none;
+    }
+
+    p,
+    a {
+        text-decoration: none;
+        color: black !important;
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+    }
+
+    h1,
+    .main__row2-unit-h3 {
+        text-decoration: none;
+        color: black !important;
+        font-family: Intro;
+        font-style: normal;
+    }
+
+    button {
+        background-color: #5222d0;
+        color: white;
+        border-radius: 30px;
+    }
+
+    .main__row2-unit6 {
+        background-color: #ec625b;
+    }
+
+    .main__row2-unit6-h3 {
+        color: white;
+        text-decoration: none;
+        font-family: Intro;
+        font-style: normal;
+    }
+
+    .main__row2-unit-input {
+        text-decoration: none;
+        color: black !important;
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+        background-color: white;
+        border: none;
+    }
+
+    .footer__nav-a {
+        color: black !important;
+        text-decoration: none;
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+    }
+
+    .footer__nav-a:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (min-width: 768px) {
+        .container {
+            display: grid;
+            grid-template-rows: 10% 80% 10%;
+        }
+
+        p,
+        a {
+            font-size: 1vw;
+        }
+
+        h1 {
+            font-size: 2vw;
+        }
+
+        .main__row2-unit-h3,
+        .main__row2-unit6-h3 {
+            font-size: 1.2vw;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 30% 30%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2%;
+        }
+
+        .header__logo {
+            justify-self: flex-start;
+        }
+
+        .header__button {
+            justify-self: flex-end;
+            padding: 2%;
+            width: 30%;
+            font-size: 1vw;
+        }
+
+        .main {
+            display: grid;
+            grid-template-rows: 10% 1fr;
+            justify-content: center;
+            align-items: center;
+            row-gap: 2%;
+            margin-bottom: 10%;
+        }
+
+        .main__row {
+            margin-left: 8%;
+        }
+
+        .main__row2 {
+            display: grid;
+            grid-template-rows: 1fr 30%;
+            grid-template-columns: 25% 25% 25%;
+            justify-content: space-around;
+            row-gap: 4%;
+            margin-left: 4%;
+        }
+
+        .main__row2-unit {
+            max-width: 80%;
+        }
+
+        .main__row2-unit6 {
+            display: grid;
+            grid-template-rows: 30% 15% 20%;
+            max-width: 80%;
+            row-gap: 7%;
+        }
+
+        .main__row2-unit6-h3 {
+            margin-left: 2%;
+        }
+
+        .main__row2-unit6-input {
+            padding: 2%;
+            width: 70%;
+            font-size: 1vw;
+            margin-left: 2%;
+        }
+
+        .main__row2-unit6-button {
+            padding: 2%;
+            width: 50%;
+            font-size: 1vw;
+            margin-left: 2%;
+        }
+
+        .footer__nav {
+            display: grid;
+            grid-template-columns: 12% 10% 10% 10% 10%;
+            font-size: 1.1vw;
+            margin-left: 8%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            display: grid;
+            grid-template-rows: 10% 1fr 10%;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-between;
+        }
+
+        p,
+        a {
+            font-size: 3vw;
+        }
+
+        h1 {
+            font-size: 4vw;
+        }
+
+        .main__row2-unit-h3,
+        .main__row2-unit6-h3 {
+            font-size: 3.5vw;
+            justify-self: center;
+        }
+
+        .header {
+            display: grid;
+            grid-template-rows: 30% 30%;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-around;
+            margin: 3%;
+            row-gap: 30%;
+            justify-self: center;
+        }
+
+        .header__button {
+            padding: 5%;
+            font-size: 3vw;
+            justify-self: center;
+            width: 90%;
+        }
+
+        .main {
+            display: grid;
+            grid-template-rows: 5% 1fr;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .main__row2-unit-p {
+            justify-self: center;
+        }
+
+        .main__row {
+            justify-self: center;
+        }
+
+        .main__row2 {
+            display: grid;
+            grid-template-rows: 22% 22% 22% 7% 7% 10%;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .main__row2-unit {
+            display: grid;
+            grid-template-rows: 60% 10% 10%;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-around;
+            margin: 2%;
+        }
+
+        .main__row2-unit-img {
+            justify-content: center;
+        }
+
+        .main__row2-unit6 {
+            display: grid;
+            grid-template-rows: 30% 20% 40%;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .main__row2-unit6-h3 {
+            margin-left: 2%;
+        }
+
+        .main__row2-unit6-input {
+            padding: 2%;
+            width: 100%;
+            font-size: 2vw;
+            justify-self: center;
+        }
+
+        .main__row2-unit6-button {
+            padding: 4%;
+            width: 100%;
+            font-size: 3vw;
+        }
+
+        .footer__nav {
+            display: grid;
+            grid-template-columns: 25% 20% 20% 20%;
+            font-size: 4vw;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
+    }

@@ -1,0 +1,214 @@
+    .container {
+        background-color: white;
+    }
+
+    h1,
+    p,
+    img,
+    button {
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-size: none;
+    }
+
+    p,
+    a {
+        text-decoration: none;
+        color: black !important;
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+    }
+
+    h1 {
+        text-decoration: none;
+        color: black !important;
+        font-family: Intro;
+        font-style: normal;
+    }
+
+    button {
+        background-color: #5222d0;
+        color: white;
+        border-radius: 30px;
+    }
+
+    .main__columnrow1-button {
+        width: 35%;
+        font-family: Intro;
+    }
+
+    .main__column-row2-nav-a {
+        color: #5222d0 !important;
+        text-decoration: none;
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+    }
+
+    .main__column-row2-nav-a:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (min-width: 768px) {
+        .container {
+            display: grid;
+            grid-template-rows: 10% 1fr;
+        }
+
+        p,
+        a {
+            font-size: 1, 25vw;
+        }
+
+        h1 {
+            font-size: 1, 25vw;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 30% 30%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2%;
+        }
+
+        .header__logo {
+            justify-self: flex-start;
+        }
+
+        .header__button {
+            justify-self: flex-end;
+            padding: 2%;
+            width: 30%;
+            font-size: 1vw;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            margin-left: 5%;
+            column-gap: 10%;
+        }
+
+        .main__img {
+            justify-self: self-end;
+        }
+
+        .main__column {
+            display: grid;
+            grid-template-rows: 50% 20%;
+            align-content: space-between;
+        }
+
+        .main__column-row1 {
+            display: grid;
+            grid-template-rows: 4fr 3fr 1fr;
+            margin-top: 10%;
+        }
+
+        .main__column-row2 {
+            align-self: self-end;
+        }
+
+        .main__column-row1-p {
+            font-size: 1.1vw;
+        }
+
+        .main__columnrow1-button {
+            font-size: 2vw;
+            padding: 1%;
+            width: 40%;
+        }
+
+        .main__column-row2-nav-a {
+            font-size: 1.1vw;
+            padding-right: 3%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .container {
+            display: grid;
+            grid-template-rows: 10% 1fr;
+        }
+
+        .header {
+            display: grid;
+            grid-template-rows: 30% 30%;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-around;
+            margin: 5%;
+            row-gap: 30%;
+        }
+
+        .header__logo {
+            justify-self: center;
+        }
+
+        .header__button {
+            padding: 5%;
+            font-size: 3vw;
+            justify-self: center;
+            width: 90%;
+        }
+
+        .main {
+            display: grid;
+            grid-template-rows: 1fr 50%;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .main__img {
+            justify-self: center;
+        }
+
+        .main__column {
+            display: grid;
+            grid-template-rows: 80% 5%;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .main__column-row1 {
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: 3fr 2fr 0.5fr;
+            align-items: center;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .main__column-row1-p {
+            font-size: 4vw;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .main__column-row1-h1 {
+            font-size: 10vw;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .main__columnrow1-button {
+            font-size: 4vw;
+            padding: 1%;
+            width: 30%;
+            justify-self: center;
+        }
+
+        .main__column-row2 {
+            justify-self: center;
+        }
+
+        .main__column-row2-nav-a {
+            font-size: 4vw;
+            justify-self: center;
+            align-self: center;
+        }
+    }
