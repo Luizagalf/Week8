@@ -23,7 +23,7 @@
     h1 {
         text-decoration: none;
         color: black !important;
-        font-family: Intro;
+        font-family: 'Intro', serif;
         font-style: normal;
     }
 
@@ -38,21 +38,21 @@
         font-family: Intro;
     }
 
-    .main__column-row2-nav-a {
+    .footer__nav-a {
         color: #5222d0 !important;
         text-decoration: none;
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Roboto Slab';
         font-style: normal;
     }
 
-    .main__column-row2-nav-a:hover {
+    .footer__nav:hover {
         text-decoration: underline;
     }
 
     @media screen and (min-width: 768px) {
         .container {
             display: grid;
-            grid-template-rows: 10% 1fr;
+            grid-template-rows: 10% 80% 10%;
         }
 
         p,
@@ -95,20 +95,10 @@
             justify-self: self-end;
         }
 
-        .main__column {
-            display: grid;
-            grid-template-rows: 50% 20%;
-            align-content: space-between;
-        }
-
         .main__column-row1 {
             display: grid;
-            grid-template-rows: 4fr 3fr 1fr;
+            grid-template-rows: 4fr 3fr 2fr;
             margin-top: 10%;
-        }
-
-        .main__column-row2 {
-            align-self: self-end;
         }
 
         .main__column-row1-p {
@@ -121,16 +111,18 @@
             width: 40%;
         }
 
-        .main__column-row2-nav-a {
+        .footer__nav {
+            display: grid;
+            grid-template-columns: 12% 10% 10% 10% 10%;
             font-size: 1.1vw;
-            padding-right: 3%;
+            margin-left: 5%;
         }
     }
 
     @media screen and (max-width: 767px) {
         .container {
             display: grid;
-            grid-template-rows: 10% 1fr;
+            grid-template-rows: 10% 80% 10%;
         }
 
         .header {
@@ -206,9 +198,11 @@
             justify-self: center;
         }
 
-        .main__column-row2-nav-a {
-            font-size: 4vw;
-            justify-self: center;
-            align-self: center;
+        .footer__nav {
+            display: grid;
+            grid-template-columns: 25% 20% 20% 20%;
+            font-size: 3vw;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15%;
         }
-    }
