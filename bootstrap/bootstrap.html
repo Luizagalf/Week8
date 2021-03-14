@@ -10,17 +10,27 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <style>
 
+        .main {
+            margin: 30px;
+        }
+
         header, footer {
             background-color: black;
             height: 100px;
         }
 
-        .header__logo-p, .nav-link, .footer__text-p {
+        .header__logo-p, .nav-link, .p-3 {
             color: white;
         }
 
         .bigbox {
             background-color: #e9ecef;
+            margin-bottom: 30px;
+            width: 93vw; 
+        }
+
+        .header {
+            justify-self: center;
         }
 
 
@@ -39,9 +49,9 @@
         <div class="row">
 
             <div class="col-12">
-            <header class="row ">
-            <p class="header header__logo-p col-3 ">Start Bootstrap</p>
-            <nav class="nav col-3 justify-content-end">
+            <header class="row">
+            <p class="header__logo-p col-6 ">Start Bootstrap</p>
+            <nav class="nav col-6 justify-content-end">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#">About</a>
                 <a class="nav-link" href="#">Services</a>
@@ -49,11 +59,8 @@
             </nav>
             </header>
             </div>
-
-            
-            <div class="col-12">
-                <main class="main">
-                    <div class="row row-cols-md-1">
+                <main class="main col row-cols-md-1 row-cols-1">
+                    <div class="row justify-content-center">
                     <div class="card bigbox">
                         <div class="card-body">
                             <h1 class="card-title">A Warm Welcome!</h1>
@@ -115,16 +122,13 @@
                         </div>
                     </div>
                     </div>
-
-
                 </main>
-            </div>
 
             <div class="col-12">
-            <footer class="footer"><p class="footer footer__text-p text-center">Copyright © Your Website 2019</p></footer>
+            <footer class="footer">
+                <p class="p-3 text-center">Copyright © Your Website 2019</p>
+            </footer>
             </div>
-
-           
 
         </div>
     </div>
