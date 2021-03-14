@@ -19,45 +19,10 @@
             color: white;
         }
 
-        .header__logo-p, .nav-link {
-            align-self: center;
+        .bigbox {
+            background-color: #e9ecef;
         }
 
-        .footer__text {
-            align-self: flex-end;
-        }
-
-        .row {
-            row-gap: 20px;
-        }
-
-        .header {
-            margin-top: 15px;
-            margin-left: 150px;
-            margin-right: 150px;
-            justify-content:space-between;
-        }
-
-        .header__nav {
-            justify-self: self-end;
-        }
-
-
-       .main {
-            margin: 15px;
-            margin-left: 150px;
-            margin-right: 150px;
-            row-gap: 15px;
-        }
-
-        .main__box {
-            width: 325px;
-            justify-self: center;
-        }
-
-        .main__bigbox-button {
-            width: 50px;
-        }
 
         
 
@@ -76,7 +41,7 @@
             <div class="col-12">
             <header class="row ">
             <p class="header header__logo-p col-3 ">Start Bootstrap</p>
-            <nav class="nav col-3">
+            <nav class="nav col-3 justify-content-end">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="#">About</a>
                 <a class="nav-link" href="#">Services</a>
@@ -87,50 +52,68 @@
 
             
             <div class="col-12">
-                <main class="main row ">
-
-                    <div class="col-12">
-                        <div class="main__bigbox row border bg-light">
-                            <h1 class="main__bigbox main__bigbox-h1 col-12">A Warm Welcome!</h1>
-                            <p class="main__bigbox main__bigbox-p col-12">Lorem ipsum dolor sit amet, consectur adipisicing elit. Ipsa, ipsam, eligendi, in que sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-                            <button class="main__bigbox main__bigbox-button col-12 btn btn-primary">Call to action!</button>
+                <main class="main">
+                    <div class="row row-cols-md-1">
+                    <div class="card bigbox">
+                        <div class="card-body">
+                            <h1 class="card-title">A Warm Welcome!</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectur adipisicing elit. Ipsa, ipsam, eligendi, in que sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+                            <a class="btn btn-primary" href="#">Call to action!</a>
                         </div>
                     </div>
-
-                    <div class="col-3">
-                        <div class="main__box row border bg-light">
-                            <img class="main__box main__box-img col-12" src="./Assets/images/apple.jpg" alt="apple">
-                            <h3 class="main__box main__box-h3 col-12 text-center">Card title</h3>
-                            <p class="main__box main__box-p col-12 text-center">Lorem ipsum dolor sit amet, consectur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                            <button class="main__box main__box-button col-12 btn btn-primary btn-sm">Find Out More!</button>
-                        </div>
                     </div>
 
-                    <div class="col-3">
-                        <div class="main__box row border bg-light">
-                            <img class="main__box main__box-img col-12" src="./Assets/images/apple.jpg" alt="apple">
-                            <h3 class="main__box main__box-h3 col-12 text-center">Card title</h3>
-                            <p class="main__box main__box-p col-12 text-center">Lorem ipsum dolor sit amet, consectur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                            <button class="main__box main__box-button col-12 btn btn-primary btn-sm">Find Out More!</button>
+
+                    <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card text-center h-100">
+                            <img class="card-img-top" src="./Assets/images/apple.jpg" alt="apple">
+                            <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                            </div>
+                            <div class="card-footer">
+                            <a class="card-button btn btn-primary btn-sm">Find Out More!</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="card text-center h-100">
+                            <img class="card-img-top" src="./Assets/images/apple.jpg" alt="apple">
+                            <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                            </div>
+                            <div class="card-footer">
+                            <a class="card-button btn btn-primary btn-sm">Find Out More!</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="card text-center h-100">
+                            <img class="card-img-top" src="./Assets/images/apple.jpg" alt="apple">
+                            <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                            </div>
+                            <div class="card-footer">
+                            <a class="card-button btn btn-primary btn-sm">Find Out More!</a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="card text-center h-100">
+                            <img class="card-img-top" src="./Assets/images/apple.jpg" alt="apple">
+                            <div class="card-body">
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                            </div>
+                            <div class="card-footer">
+                            <a class="card-button btn btn-primary btn-sm">Find Out More!</a>
+                            </div>
+                        </div>
                         </div>
                     </div>
-
-                    <div class="col-3">
-                        <div class="main__box row border bg-light">
-                            <img class="main__box main__box-img col-12" src="./Assets/images/apple.jpg" alt="apple">
-                            <h3 class="main__box main__box-h3 col-12 text-center">Card title</h3>
-                            <p class="main__box main__box-p col-12 text-center">Lorem ipsum dolor sit amet, consectur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                            <button class="main__box main__box-button col-12 btn btn-primary btn-sm">Find Out More!</button>
-                        </div>
-                    </div>
-
-                    <div class="col-3">
-                        <div class="main__box row border bg-light">
-                            <img class="main__box main__box-img col-12" src="./Assets/images/apple.jpg" alt="apple">
-                            <h3 class="main__box main__box-h3 col-12 text-center">Card title</h3>
-                            <p class="main__box main__box-p col-12 text-center">Lorem ipsum dolor sit amet, consectur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
-                            <button class="main__box main__box-button col-12 btn btn-primary btn-sm">Find Out More!</button>
-                        </div>
                     </div>
 
 
